@@ -1,10 +1,10 @@
-name: Build Core Database Test Image and Test
+name: Build Test Image and Test
 
-# Run on a push to master
+# Run on a push to main
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build:
