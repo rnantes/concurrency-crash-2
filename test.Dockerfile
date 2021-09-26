@@ -1,7 +1,7 @@
 # ================================
 # Build image
 # ================================
-FROM swiftlang/swift:nightly-5.5-focal as build
+FROM swiftlang/swift:nightly-main-focal as build
 
 # Set up a build area
 WORKDIR /build
@@ -17,7 +17,7 @@ RUN swift package resolve
 COPY . .
 
 # Build including tests with discovery
-RUN swift build --build-tests --enable-test-discovery
+RUN swift build --build-tests
 
 
 
