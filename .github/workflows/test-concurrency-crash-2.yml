@@ -23,4 +23,4 @@ jobs:
 
         # Build dockerfiles
         - name: Build Dockerfiles
-          run: docker build -f test.Dockerfile
+          run: docker build -f test.Dockerfile .
